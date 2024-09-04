@@ -36,6 +36,8 @@ type Options struct {
 
 	MergeAll bool // Merge all imports into a single group
 
+	Simplify bool // Simplify code like gofmt -s
+
 	Fragment  bool // Accept fragment of a source file (no package statement)
 	AllErrors bool // Report all errors (not just the first 10 on different lines)
 
@@ -133,6 +135,10 @@ func formatFile(fset *token.FileSet, file *ast.File, src []byte, adjust func(ori
 			lastGroup = groupNum
 		}
 
+	}
+
+	if opt.Simplify {
+		simplify(file)
 	}
 
 	printerMode := printer.UseSpaces

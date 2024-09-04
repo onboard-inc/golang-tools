@@ -2999,6 +2999,26 @@ import (
 	}.processTest(t, "golang.org/fake", "x.go", nil, &Options{MergeAll: true}, want)
 }
 
+func TestSimplify(t *testing.T) {
+	const input = `package main
+
+var a = []foo{foo{}}
+`
+	const want = `package main
+
+var a = []foo{{}}
+`
+
+	testConfig{
+		modules: []packagestest.Module{
+			{
+				Name:  "golang.org/fake",
+				Files: fm{"x.go": input},
+			},
+		},
+	}.processTest(t, "golang.org/fake", "x.go", nil, &Options{Simplify: true}, want)
+}
+
 func TestSymbolSearchStarvation(t *testing.T) {
 	// This test verifies the fix for golang/go#67923: searching through
 	// candidates should not starve when the context is cancelled.

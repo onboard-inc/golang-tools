@@ -54,6 +54,7 @@ func init() {
 	flag.StringVar(&options.LocalPrefix, "local", "", "put imports beginning with this string after 3rd-party packages; comma-separated list")
 	flag.BoolVar(&options.FormatOnly, "format-only", false, "if true, don't fix imports and only format. In this mode, goimports is effectively gofmt, with the addition that imports are grouped into sections.")
 	flag.BoolVar(&options.MergeAll, "merge-all", false, "if true, merge all imports into a single group")
+	flag.BoolVar(&options.Simplify, "s", false, "if true, simplify code like gofmt -s does")
 }
 
 func report(err error) {
