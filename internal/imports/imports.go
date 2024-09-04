@@ -34,6 +34,8 @@ type Options struct {
 	// into another group after 3rd-party packages.
 	LocalPrefix string
 
+	MergeAll bool // Merge all imports into a single group
+
 	Fragment  bool // Accept fragment of a source file (no package statement)
 	AllErrors bool // Report all errors (not just the first 10 on different lines)
 
@@ -114,7 +116,7 @@ func ApplyFixes(fixes []*ImportFix, filename string, src []byte, opt *Options, e
 // formatted file, and returns the postpocessed result.
 func formatFile(fset *token.FileSet, file *ast.File, src []byte, adjust func(orig []byte, src []byte) []byte, opt *Options) ([]byte, error) {
 	mergeImports(file)
-	sortImports(opt.LocalPrefix, fset.File(file.Pos()), file)
+	sortImports(opt.LocalPrefix, opt.MergeAll, fset.File(file.Pos()), file)
 	var spacesBefore []string // import paths we need spaces before
 	for _, impSection := range astutil.Imports(fset, file) {
 		// Within each block of contiguous imports, see if any
