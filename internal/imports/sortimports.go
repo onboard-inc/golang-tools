@@ -19,7 +19,7 @@ import (
 // It also removes duplicate imports when it is possible to do so without data loss.
 //
 // It may mutate the token.File and the ast.File.
-func sortImports(localPrefix string, tokFile *token.File, f *ast.File) {
+func sortImports(localPrefix string, mergeAll bool, tokFile *token.File, f *ast.File) {
 	for i, d := range f.Decls {
 		d, ok := d.(*ast.GenDecl)
 		if !ok || d.Tok != token.IMPORT {
@@ -38,18 +38,24 @@ func sortImports(localPrefix string, tokFile *token.File, f *ast.File) {
 			continue
 		}
 
-		// Identify and sort runs of specs on successive lines.
-		i := 0
-		specs := d.Specs[:0]
-		for j, s := range d.Specs {
-			if j > i && tokFile.Line(s.Pos()) > 1+tokFile.Line(d.Specs[j-1].End()) {
-				// j begins a new run.  End this one.
-				specs = append(specs, sortSpecs(localPrefix, tokFile, f, d.Specs[i:j])...)
-				i = j
+		// Identify and sort runs of specs.
+		// When mergeAll is true, treat all specs as a single run.
+		if mergeAll {
+			d.Specs = sortSpecs(localPrefix, tokFile, f, d.Specs)
+		} else {
+			// Identify and sort runs of specs on successive lines.
+			i := 0
+			specs := d.Specs[:0]
+			for j, s := range d.Specs {
+				if j > i && tokFile.Line(s.Pos()) > 1+tokFile.Line(d.Specs[j-1].End()) {
+					// j begins a new run.  End this one.
+					specs = append(specs, sortSpecs(localPrefix, tokFile, f, d.Specs[i:j])...)
+					i = j
+				}
 			}
+			specs = append(specs, sortSpecs(localPrefix, tokFile, f, d.Specs[i:])...)
+			d.Specs = specs
 		}
-		specs = append(specs, sortSpecs(localPrefix, tokFile, f, d.Specs[i:])...)
-		d.Specs = specs
 
 		// Deduping can leave a blank line before the rparen; clean that up.
 		// Ignore line directives.
