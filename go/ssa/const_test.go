@@ -14,7 +14,7 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/go/ssa"
+	"github.com/onboard-inc/golang-tools/go/ssa"
 )
 
 func TestConstString(t *testing.T) {

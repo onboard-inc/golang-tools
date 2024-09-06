@@ -18,12 +18,12 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/go/callgraph"
-	"golang.org/x/tools/go/callgraph/rta"
-	"golang.org/x/tools/go/loader"
-	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/go/ssa/ssautil"
-	"golang.org/x/tools/internal/aliases"
+	"github.com/onboard-inc/golang-tools/go/callgraph"
+	"github.com/onboard-inc/golang-tools/go/callgraph/rta"
+	"github.com/onboard-inc/golang-tools/go/loader"
+	"github.com/onboard-inc/golang-tools/go/ssa"
+	"github.com/onboard-inc/golang-tools/go/ssa/ssautil"
+	"github.com/onboard-inc/golang-tools/internal/aliases"
 )
 
 // TestRTA runs RTA on each testdata/*.go file and compares the

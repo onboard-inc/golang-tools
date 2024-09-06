@@ -10,8 +10,8 @@ import (
 	"sort"
 	"testing"
 
-	"golang.org/x/tools/go/packages"
-	. "golang.org/x/tools/gopls/internal/fuzzy"
+	"github.com/onboard-inc/golang-tools/go/packages"
+	. "github.com/onboard-inc/golang-tools/gopls/internal/fuzzy"
 )
 
 func TestSymbolMatchIndex(t *testing.T) {
@@ -157,7 +157,7 @@ func collectIdentifiers(tb testing.TB) []string {
 		Mode:  packages.NeedName | packages.NeedSyntax | packages.NeedFiles,
 		Tests: true,
 	}
-	pkgs, err := packages.Load(cfg, "golang.org/x/tools/...")
+	pkgs, err := packages.Load(cfg, "github.com/onboard-inc/golang-tools/...")
 	if err != nil {
 		tb.Fatal(err)
 	}

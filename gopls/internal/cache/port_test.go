@@ -10,11 +10,11 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"golang.org/x/sync/errgroup"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/gopls/internal/file"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/util/bug"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/onboard-inc/golang-tools/go/packages"
+	"github.com/onboard-inc/golang-tools/gopls/internal/file"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/bug"
+	"github.com/onboard-inc/golang-tools/internal/testenv"
 )
 
 func TestMain(m *testing.M) {

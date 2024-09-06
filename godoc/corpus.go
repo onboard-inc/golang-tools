@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	"golang.org/x/tools/godoc/analysis"
-	"golang.org/x/tools/godoc/util"
-	"golang.org/x/tools/godoc/vfs"
+	"github.com/onboard-inc/golang-tools/godoc/analysis"
+	"github.com/onboard-inc/golang-tools/godoc/util"
+	"github.com/onboard-inc/golang-tools/godoc/vfs"
 )
 
 // A Corpus holds all the state related to serving and indexing a

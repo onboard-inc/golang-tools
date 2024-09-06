@@ -20,17 +20,17 @@ import (
 	"strings"
 	"time"
 
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/cache/metadata"
-	"golang.org/x/tools/gopls/internal/cache/parsego"
-	"golang.org/x/tools/gopls/internal/file"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/protocol/semtok"
-	"golang.org/x/tools/gopls/internal/util/bug"
-	"golang.org/x/tools/gopls/internal/util/safetoken"
-	"golang.org/x/tools/gopls/internal/util/typesutil"
-	"golang.org/x/tools/internal/aliases"
-	"golang.org/x/tools/internal/event"
+	"github.com/onboard-inc/golang-tools/gopls/internal/cache"
+	"github.com/onboard-inc/golang-tools/gopls/internal/cache/metadata"
+	"github.com/onboard-inc/golang-tools/gopls/internal/cache/parsego"
+	"github.com/onboard-inc/golang-tools/gopls/internal/file"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol/semtok"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/bug"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/safetoken"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/typesutil"
+	"github.com/onboard-inc/golang-tools/internal/aliases"
+	"github.com/onboard-inc/golang-tools/internal/event"
 )
 
 // semDebug enables comprehensive logging of decisions

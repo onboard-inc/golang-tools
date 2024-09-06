@@ -16,15 +16,15 @@ import (
 	"strings"
 
 	"golang.org/x/mod/modfile"
-	"golang.org/x/tools/gopls/internal/cache/parsego"
-	"golang.org/x/tools/gopls/internal/file"
-	"golang.org/x/tools/gopls/internal/label"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/protocol/command"
-	"golang.org/x/tools/internal/diff"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/gocommand"
-	"golang.org/x/tools/internal/memoize"
+	"github.com/onboard-inc/golang-tools/gopls/internal/cache/parsego"
+	"github.com/onboard-inc/golang-tools/gopls/internal/file"
+	"github.com/onboard-inc/golang-tools/gopls/internal/label"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol/command"
+	"github.com/onboard-inc/golang-tools/internal/diff"
+	"github.com/onboard-inc/golang-tools/internal/event"
+	"github.com/onboard-inc/golang-tools/internal/gocommand"
+	"github.com/onboard-inc/golang-tools/internal/memoize"
 )
 
 // This error is sought by mod diagnostics.
@@ -267,10 +267,10 @@ func missingModuleDiagnostics(ctx context.Context, snapshot *Snapshot, pm *Parse
 			// Example:
 			//
 			// import (
-			//   "golang.org/x/tools/go/expect"
-			//   "golang.org/x/tools/go/packages"
+			//   "github.com/onboard-inc/golang-tools/go/expect"
+			//   "github.com/onboard-inc/golang-tools/go/packages"
 			// )
-			// They both are related to the same module: "golang.org/x/tools".
+			// They both are related to the same module: "github.com/onboard-inc/golang-tools".
 			var match string
 			for _, req := range ideal.Require {
 				if strings.HasPrefix(imp, req.Mod.Path) && len(req.Mod.Path) > len(match) {

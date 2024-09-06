@@ -10,9 +10,9 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"golang.org/x/tools/gopls/internal/protocol"
-	. "golang.org/x/tools/gopls/internal/test/integration"
-	"golang.org/x/tools/gopls/internal/test/integration/fake"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol"
+	. "github.com/onboard-inc/golang-tools/gopls/internal/test/integration"
+	"github.com/onboard-inc/golang-tools/gopls/internal/test/integration/fake"
 )
 
 func TestBadURICrash_VSCodeIssue1498(t *testing.T) {

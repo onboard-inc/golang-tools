@@ -11,8 +11,8 @@ import (
 	"path/filepath"
 
 	"golang.org/x/mod/modfile"
-	"golang.org/x/tools/gopls/internal/file"
-	"golang.org/x/tools/gopls/internal/protocol"
+	"github.com/onboard-inc/golang-tools/gopls/internal/file"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol"
 )
 
 // isGoWork reports if uri is a go.work file.

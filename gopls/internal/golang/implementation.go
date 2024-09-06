@@ -17,14 +17,14 @@ import (
 	"sync"
 
 	"golang.org/x/sync/errgroup"
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/cache/metadata"
-	"golang.org/x/tools/gopls/internal/cache/methodsets"
-	"golang.org/x/tools/gopls/internal/file"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/util/bug"
-	"golang.org/x/tools/gopls/internal/util/safetoken"
-	"golang.org/x/tools/internal/event"
+	"github.com/onboard-inc/golang-tools/gopls/internal/cache"
+	"github.com/onboard-inc/golang-tools/gopls/internal/cache/metadata"
+	"github.com/onboard-inc/golang-tools/gopls/internal/cache/methodsets"
+	"github.com/onboard-inc/golang-tools/gopls/internal/file"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/bug"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/safetoken"
+	"github.com/onboard-inc/golang-tools/internal/event"
 )
 
 // This file defines the new implementation of the 'implementation'

@@ -13,7 +13,7 @@ import (
 	"fmt"
 	"os"
 
-	"golang.org/x/tools/godoc/static"
+	"github.com/onboard-inc/golang-tools/godoc/static"
 )
 
 func main() {

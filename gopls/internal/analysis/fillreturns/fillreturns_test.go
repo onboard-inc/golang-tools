@@ -7,9 +7,9 @@ package fillreturns_test
 import (
 	"testing"
 
-	"golang.org/x/tools/go/analysis/analysistest"
-	"golang.org/x/tools/gopls/internal/analysis/fillreturns"
-	"golang.org/x/tools/internal/aliases"
+	"github.com/onboard-inc/golang-tools/go/analysis/analysistest"
+	"github.com/onboard-inc/golang-tools/gopls/internal/analysis/fillreturns"
+	"github.com/onboard-inc/golang-tools/internal/aliases"
 )
 
 func Test(t *testing.T) {

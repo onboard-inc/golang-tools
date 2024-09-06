@@ -12,7 +12,7 @@ package misc
 import (
 	"testing"
 
-	. "golang.org/x/tools/gopls/internal/test/integration"
+	. "github.com/onboard-inc/golang-tools/gopls/internal/test/integration"
 )
 
 func TestGenerateProgress(t *testing.T) {

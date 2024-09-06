@@ -11,10 +11,10 @@ import (
 	"sort"
 	"strings"
 
-	"golang.org/x/tools/gopls/internal/cache/metadata"
-	"golang.org/x/tools/gopls/internal/cache/parsego"
-	"golang.org/x/tools/gopls/internal/util/astutil"
-	"golang.org/x/tools/gopls/internal/util/frob"
+	"github.com/onboard-inc/golang-tools/gopls/internal/cache/metadata"
+	"github.com/onboard-inc/golang-tools/gopls/internal/cache/parsego"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/astutil"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/frob"
 )
 
 // Encode analyzes the Go syntax trees of a package, constructs a

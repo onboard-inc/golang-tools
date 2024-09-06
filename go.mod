@@ -1,4 +1,4 @@
-module golang.org/x/tools
+module github.com/onboard-inc/golang-tools
 
 go 1.19 // => default GODEBUG has gotypesalias=0
 

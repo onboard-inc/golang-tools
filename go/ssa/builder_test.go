@@ -22,15 +22,15 @@ import (
 	"testing"
 
 	"golang.org/x/sync/errgroup"
-	"golang.org/x/tools/go/analysis/analysistest"
-	"golang.org/x/tools/go/buildutil"
-	"golang.org/x/tools/go/loader"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/go/ssa/ssautil"
-	"golang.org/x/tools/internal/aliases"
-	"golang.org/x/tools/internal/testenv"
-	"golang.org/x/tools/internal/testfiles"
+	"github.com/onboard-inc/golang-tools/go/analysis/analysistest"
+	"github.com/onboard-inc/golang-tools/go/buildutil"
+	"github.com/onboard-inc/golang-tools/go/loader"
+	"github.com/onboard-inc/golang-tools/go/packages"
+	"github.com/onboard-inc/golang-tools/go/ssa"
+	"github.com/onboard-inc/golang-tools/go/ssa/ssautil"
+	"github.com/onboard-inc/golang-tools/internal/aliases"
+	"github.com/onboard-inc/golang-tools/internal/testenv"
+	"github.com/onboard-inc/golang-tools/internal/testfiles"
 )
 
 func isEmpty(f *ssa.Function) bool { return f.Blocks == nil }

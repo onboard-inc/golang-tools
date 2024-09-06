@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/protocol"
-	. "golang.org/x/tools/gopls/internal/test/integration"
+	"github.com/onboard-inc/golang-tools/gopls/internal/cache"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol"
+	. "github.com/onboard-inc/golang-tools/gopls/internal/test/integration"
 )
 
 // Test for the timeformat analyzer, following golang/vscode-go#2406.

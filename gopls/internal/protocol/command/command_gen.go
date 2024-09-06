@@ -15,7 +15,7 @@ import (
 	"context"
 	"fmt"
 
-	"golang.org/x/tools/gopls/internal/protocol"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol"
 )
 
 // Symbolic names for gopls commands, corresponding to methods of [Interface].

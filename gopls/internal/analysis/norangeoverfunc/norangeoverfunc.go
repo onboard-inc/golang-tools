@@ -12,9 +12,9 @@ import (
 	"go/ast"
 	"go/types"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/passes/inspect"
-	"golang.org/x/tools/go/ast/inspector"
+	"github.com/onboard-inc/golang-tools/go/analysis"
+	"github.com/onboard-inc/golang-tools/go/analysis/passes/inspect"
+	"github.com/onboard-inc/golang-tools/go/ast/inspector"
 )
 
 var Analyzer = &analysis.Analyzer{

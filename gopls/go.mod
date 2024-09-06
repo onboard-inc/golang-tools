@@ -1,4 +1,4 @@
-module golang.org/x/tools/gopls
+module github.com/onboard-inc/golang-tools/gopls
 
 go 1.19 // => default GODEBUG has gotypesalias=0
 
@@ -9,7 +9,7 @@ require (
 	golang.org/x/sync v0.8.0
 	golang.org/x/telemetry v0.0.0-20240829154258-f29ab539cc98
 	golang.org/x/text v0.17.0
-	golang.org/x/tools v0.21.1-0.20240508182429-e35e4ccd0d2d
+	github.com/onboard-inc/golang-tools v0.21.1-0.20240508182429-e35e4ccd0d2d
 	golang.org/x/vuln v1.0.4
 	gopkg.in/yaml.v3 v3.0.1
 	honnef.co/go/tools v0.4.7
@@ -26,4 +26,4 @@ require (
 
 )
 
-replace golang.org/x/tools => ../
+replace github.com/onboard-inc/golang-tools => ../

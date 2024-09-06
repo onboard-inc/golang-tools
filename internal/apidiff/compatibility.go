@@ -9,8 +9,8 @@ import (
 	"go/types"
 	"reflect"
 
-	"golang.org/x/tools/internal/aliases"
-	"golang.org/x/tools/internal/typesinternal"
+	"github.com/onboard-inc/golang-tools/internal/aliases"
+	"github.com/onboard-inc/golang-tools/internal/typesinternal"
 )
 
 func (d *differ) checkCompatible(otn *types.TypeName, old, new types.Type) {

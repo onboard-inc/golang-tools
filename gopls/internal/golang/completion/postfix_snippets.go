@@ -16,15 +16,15 @@ import (
 	"sync"
 	"text/template"
 
-	"golang.org/x/tools/gopls/internal/cache/metadata"
-	"golang.org/x/tools/gopls/internal/golang"
-	"golang.org/x/tools/gopls/internal/golang/completion/snippet"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/util/safetoken"
-	"golang.org/x/tools/internal/aliases"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/imports"
-	"golang.org/x/tools/internal/typesinternal"
+	"github.com/onboard-inc/golang-tools/gopls/internal/cache/metadata"
+	"github.com/onboard-inc/golang-tools/gopls/internal/golang"
+	"github.com/onboard-inc/golang-tools/gopls/internal/golang/completion/snippet"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/safetoken"
+	"github.com/onboard-inc/golang-tools/internal/aliases"
+	"github.com/onboard-inc/golang-tools/internal/event"
+	"github.com/onboard-inc/golang-tools/internal/imports"
+	"github.com/onboard-inc/golang-tools/internal/typesinternal"
 )
 
 // Postfix snippets are artificial methods that allow the user to

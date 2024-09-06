@@ -11,8 +11,8 @@ import (
 	"go/types"
 	"testing"
 
-	"golang.org/x/tools/internal/aliases"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/onboard-inc/golang-tools/internal/aliases"
+	"github.com/onboard-inc/golang-tools/internal/testenv"
 )
 
 // Assert that Obj exists on Alias.

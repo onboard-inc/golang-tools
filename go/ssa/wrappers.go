@@ -25,7 +25,7 @@ import (
 	"go/token"
 	"go/types"
 
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/onboard-inc/golang-tools/internal/typeparams"
 )
 
 // -- wrappers -----------------------------------------------------------

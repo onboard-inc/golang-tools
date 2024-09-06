@@ -18,9 +18,9 @@ import (
 	"sync"
 	"time"
 
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/util/slices"
-	"golang.org/x/tools/internal/robustio"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/slices"
+	"github.com/onboard-inc/golang-tools/internal/robustio"
 )
 
 // RelativeTo is a helper for operations relative to a given directory.

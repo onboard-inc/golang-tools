@@ -12,11 +12,11 @@ import (
 	"go/types"
 	"sync"
 
-	"golang.org/x/tools/gopls/internal/cache/metadata"
-	"golang.org/x/tools/gopls/internal/cache/methodsets"
-	"golang.org/x/tools/gopls/internal/cache/parsego"
-	"golang.org/x/tools/gopls/internal/cache/xrefs"
-	"golang.org/x/tools/gopls/internal/protocol"
+	"github.com/onboard-inc/golang-tools/gopls/internal/cache/metadata"
+	"github.com/onboard-inc/golang-tools/gopls/internal/cache/methodsets"
+	"github.com/onboard-inc/golang-tools/gopls/internal/cache/parsego"
+	"github.com/onboard-inc/golang-tools/gopls/internal/cache/xrefs"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol"
 )
 
 // Convenient aliases for very heavily used types.

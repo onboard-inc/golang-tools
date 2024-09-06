@@ -7,10 +7,10 @@ package misc
 import (
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/test/compare"
-	. "golang.org/x/tools/gopls/internal/test/integration"
+	"github.com/onboard-inc/golang-tools/gopls/internal/test/compare"
+	. "github.com/onboard-inc/golang-tools/gopls/internal/test/integration"
 
-	"golang.org/x/tools/gopls/internal/protocol"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol"
 )
 
 func TestExtractFunction(t *testing.T) {

@@ -11,10 +11,10 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"golang.org/x/tools/gopls/internal/protocol"
-	. "golang.org/x/tools/gopls/internal/test/integration"
-	"golang.org/x/tools/gopls/internal/test/integration/fake"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol"
+	. "github.com/onboard-inc/golang-tools/gopls/internal/test/integration"
+	"github.com/onboard-inc/golang-tools/gopls/internal/test/integration/fake"
+	"github.com/onboard-inc/golang-tools/internal/testenv"
 )
 
 func TestHoverUnexported(t *testing.T) {
@@ -354,7 +354,7 @@ package main
 var A int
 // [fmt.Println]
 var B int
-// [golang.org/x/tools/go/packages.Package.String]
+// [github.com/onboard-inc/golang-tools/go/packages.Package.String]
 var C int
 `
 	var tests = []struct {
@@ -363,7 +363,7 @@ var C int
 	}{
 		{"A", "fmt"},
 		{"B", "fmt#Println"},
-		{"C", "golang.org/x/tools/go/packages#Package.String"},
+		{"C", "github.com/onboard-inc/golang-tools/go/packages#Package.String"},
 	}
 	for _, test := range tests {
 		Run(t, input, func(t *testing.T, env *Env) {

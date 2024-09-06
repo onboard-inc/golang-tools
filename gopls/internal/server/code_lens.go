@@ -9,14 +9,14 @@ import (
 	"fmt"
 	"sort"
 
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/file"
-	"golang.org/x/tools/gopls/internal/golang"
-	"golang.org/x/tools/gopls/internal/label"
-	"golang.org/x/tools/gopls/internal/mod"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/settings"
-	"golang.org/x/tools/internal/event"
+	"github.com/onboard-inc/golang-tools/gopls/internal/cache"
+	"github.com/onboard-inc/golang-tools/gopls/internal/file"
+	"github.com/onboard-inc/golang-tools/gopls/internal/golang"
+	"github.com/onboard-inc/golang-tools/gopls/internal/label"
+	"github.com/onboard-inc/golang-tools/gopls/internal/mod"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol"
+	"github.com/onboard-inc/golang-tools/gopls/internal/settings"
+	"github.com/onboard-inc/golang-tools/internal/event"
 )
 
 // CodeLens reports the set of available CodeLenses

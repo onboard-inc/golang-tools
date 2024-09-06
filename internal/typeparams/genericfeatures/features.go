@@ -11,8 +11,8 @@ import (
 	"go/types"
 	"strings"
 
-	"golang.org/x/tools/go/ast/inspector"
-	"golang.org/x/tools/internal/aliases"
+	"github.com/onboard-inc/golang-tools/go/ast/inspector"
+	"github.com/onboard-inc/golang-tools/internal/aliases"
 )
 
 // Features is a set of flags reporting which features of generic Go code a

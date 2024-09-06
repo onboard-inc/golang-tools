@@ -15,11 +15,11 @@ import (
 	"os"
 	"sync"
 
-	"golang.org/x/tools/go/ast/astutil"
-	"golang.org/x/tools/go/types/typeutil"
-	"golang.org/x/tools/internal/aliases"
-	"golang.org/x/tools/internal/typeparams"
-	"golang.org/x/tools/internal/typesinternal"
+	"github.com/onboard-inc/golang-tools/go/ast/astutil"
+	"github.com/onboard-inc/golang-tools/go/types/typeutil"
+	"github.com/onboard-inc/golang-tools/internal/aliases"
+	"github.com/onboard-inc/golang-tools/internal/typeparams"
+	"github.com/onboard-inc/golang-tools/internal/typesinternal"
 )
 
 type unit struct{}

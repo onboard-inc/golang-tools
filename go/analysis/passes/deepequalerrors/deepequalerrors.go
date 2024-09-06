@@ -10,12 +10,12 @@ import (
 	"go/ast"
 	"go/types"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/passes/inspect"
-	"golang.org/x/tools/go/analysis/passes/internal/analysisutil"
-	"golang.org/x/tools/go/ast/inspector"
-	"golang.org/x/tools/go/types/typeutil"
-	"golang.org/x/tools/internal/aliases"
+	"github.com/onboard-inc/golang-tools/go/analysis"
+	"github.com/onboard-inc/golang-tools/go/analysis/passes/inspect"
+	"github.com/onboard-inc/golang-tools/go/analysis/passes/internal/analysisutil"
+	"github.com/onboard-inc/golang-tools/go/ast/inspector"
+	"github.com/onboard-inc/golang-tools/go/types/typeutil"
+	"github.com/onboard-inc/golang-tools/internal/aliases"
 )
 
 const Doc = `check for calls of reflect.DeepEqual on error values
@@ -30,7 +30,7 @@ errors is discouraged.`
 var Analyzer = &analysis.Analyzer{
 	Name:     "deepequalerrors",
 	Doc:      Doc,
-	URL:      "https://pkg.go.dev/golang.org/x/tools/go/analysis/passes/deepequalerrors",
+	URL:      "https://pkg.go.dev/github.com/onboard-inc/golang-tools/go/analysis/passes/deepequalerrors",
 	Requires: []*analysis.Analyzer{inspect.Analyzer},
 	Run:      run,
 }

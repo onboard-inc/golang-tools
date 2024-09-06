@@ -21,17 +21,17 @@ import (
 	"sync"
 
 	"golang.org/x/telemetry/counter"
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/debug"
-	debuglog "golang.org/x/tools/gopls/internal/debug/log"
-	"golang.org/x/tools/gopls/internal/file"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/settings"
-	"golang.org/x/tools/gopls/internal/util/bug"
-	"golang.org/x/tools/gopls/internal/util/goversion"
-	"golang.org/x/tools/gopls/internal/util/maps"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/jsonrpc2"
+	"github.com/onboard-inc/golang-tools/gopls/internal/cache"
+	"github.com/onboard-inc/golang-tools/gopls/internal/debug"
+	debuglog "github.com/onboard-inc/golang-tools/gopls/internal/debug/log"
+	"github.com/onboard-inc/golang-tools/gopls/internal/file"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol"
+	"github.com/onboard-inc/golang-tools/gopls/internal/settings"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/bug"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/goversion"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/maps"
+	"github.com/onboard-inc/golang-tools/internal/event"
+	"github.com/onboard-inc/golang-tools/internal/jsonrpc2"
 )
 
 func (s *server) Initialize(ctx context.Context, params *protocol.ParamInitialize) (*protocol.InitializeResult, error) {

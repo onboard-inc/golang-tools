@@ -17,15 +17,15 @@ import (
 	"strings"
 	"sync"
 
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/protocol/command"
-	"golang.org/x/tools/gopls/internal/test/integration/fake/glob"
-	"golang.org/x/tools/gopls/internal/util/bug"
-	"golang.org/x/tools/gopls/internal/util/pathutil"
-	"golang.org/x/tools/gopls/internal/util/slices"
-	"golang.org/x/tools/internal/jsonrpc2"
-	"golang.org/x/tools/internal/jsonrpc2/servertest"
-	"golang.org/x/tools/internal/xcontext"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol/command"
+	"github.com/onboard-inc/golang-tools/gopls/internal/test/integration/fake/glob"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/bug"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/pathutil"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/slices"
+	"github.com/onboard-inc/golang-tools/internal/jsonrpc2"
+	"github.com/onboard-inc/golang-tools/internal/jsonrpc2/servertest"
+	"github.com/onboard-inc/golang-tools/internal/xcontext"
 )
 
 // Editor is a fake client editor.  It keeps track of client state and can be

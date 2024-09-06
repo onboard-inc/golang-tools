@@ -20,17 +20,17 @@ import (
 	"testing"
 	"time"
 
-	"golang.org/x/tools/gopls/internal/cmd"
-	"golang.org/x/tools/gopls/internal/protocol/command"
-	"golang.org/x/tools/gopls/internal/test/integration"
-	"golang.org/x/tools/gopls/internal/test/integration/fake"
-	"golang.org/x/tools/gopls/internal/util/bug"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/fakenet"
-	"golang.org/x/tools/internal/jsonrpc2"
-	"golang.org/x/tools/internal/jsonrpc2/servertest"
-	"golang.org/x/tools/internal/pprof"
-	"golang.org/x/tools/internal/tool"
+	"github.com/onboard-inc/golang-tools/gopls/internal/cmd"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol/command"
+	"github.com/onboard-inc/golang-tools/gopls/internal/test/integration"
+	"github.com/onboard-inc/golang-tools/gopls/internal/test/integration/fake"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/bug"
+	"github.com/onboard-inc/golang-tools/internal/event"
+	"github.com/onboard-inc/golang-tools/internal/fakenet"
+	"github.com/onboard-inc/golang-tools/internal/jsonrpc2"
+	"github.com/onboard-inc/golang-tools/internal/jsonrpc2/servertest"
+	"github.com/onboard-inc/golang-tools/internal/pprof"
+	"github.com/onboard-inc/golang-tools/internal/tool"
 )
 
 var (

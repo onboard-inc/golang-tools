@@ -12,7 +12,7 @@ package lru_test
 import (
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/util/lru"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/lru"
 )
 
 func TestSetUntypedNil(t *testing.T) {

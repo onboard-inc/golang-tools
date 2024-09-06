@@ -14,10 +14,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/event/keys"
-	"golang.org/x/tools/internal/event/label"
-	"golang.org/x/tools/internal/jsonrpc2"
+	"github.com/onboard-inc/golang-tools/internal/event"
+	"github.com/onboard-inc/golang-tools/internal/event/keys"
+	"github.com/onboard-inc/golang-tools/internal/event/label"
+	"github.com/onboard-inc/golang-tools/internal/jsonrpc2"
 )
 
 // Binder builds a connection configuration.

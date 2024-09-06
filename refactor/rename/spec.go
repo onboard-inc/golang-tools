@@ -23,9 +23,9 @@ import (
 	"strconv"
 	"strings"
 
-	"golang.org/x/tools/go/buildutil"
-	"golang.org/x/tools/go/loader"
-	"golang.org/x/tools/internal/typesinternal"
+	"github.com/onboard-inc/golang-tools/go/buildutil"
+	"github.com/onboard-inc/golang-tools/go/loader"
+	"github.com/onboard-inc/golang-tools/internal/typesinternal"
 )
 
 // A spec specifies an entity to rename.

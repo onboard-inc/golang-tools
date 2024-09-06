@@ -7,8 +7,8 @@ package slog
 import (
 	"testing"
 
-	"golang.org/x/tools/go/analysis/analysistest"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/onboard-inc/golang-tools/go/analysis/analysistest"
+	"github.com/onboard-inc/golang-tools/internal/testenv"
 )
 
 func Test(t *testing.T) {

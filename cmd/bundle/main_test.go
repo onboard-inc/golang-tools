@@ -11,7 +11,7 @@ import (
 	"runtime"
 	"testing"
 
-	"golang.org/x/tools/go/packages/packagestest"
+	"github.com/onboard-inc/golang-tools/go/packages/packagestest"
 )
 
 func TestBundle(t *testing.T) { packagestest.TestAll(t, testBundle) }

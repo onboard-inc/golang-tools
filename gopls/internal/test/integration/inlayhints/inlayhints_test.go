@@ -7,9 +7,9 @@ import (
 	"os"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/settings"
-	. "golang.org/x/tools/gopls/internal/test/integration"
-	"golang.org/x/tools/gopls/internal/util/bug"
+	"github.com/onboard-inc/golang-tools/gopls/internal/settings"
+	. "github.com/onboard-inc/golang-tools/gopls/internal/test/integration"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/bug"
 )
 
 func TestMain(m *testing.M) {

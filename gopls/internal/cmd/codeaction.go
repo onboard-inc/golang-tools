@@ -11,9 +11,9 @@ import (
 	"regexp"
 	"strings"
 
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/util/slices"
-	"golang.org/x/tools/internal/tool"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/slices"
+	"github.com/onboard-inc/golang-tools/internal/tool"
 )
 
 // codeaction implements the codeaction verb for gopls.

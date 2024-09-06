@@ -8,13 +8,13 @@ import (
 	"runtime"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/protocol/command"
-	"golang.org/x/tools/gopls/internal/server"
-	. "golang.org/x/tools/gopls/internal/test/integration"
-	"golang.org/x/tools/gopls/internal/test/integration/fake"
-	"golang.org/x/tools/gopls/internal/util/bug"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol/command"
+	"github.com/onboard-inc/golang-tools/gopls/internal/server"
+	. "github.com/onboard-inc/golang-tools/gopls/internal/test/integration"
+	"github.com/onboard-inc/golang-tools/gopls/internal/test/integration/fake"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/bug"
+	"github.com/onboard-inc/golang-tools/internal/testenv"
 )
 
 func TestGCDetails_Toggle(t *testing.T) {

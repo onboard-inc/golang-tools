@@ -16,8 +16,8 @@ import (
 	pathpkg "path"
 	"strconv"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/internal/aliases"
+	"github.com/onboard-inc/golang-tools/go/analysis"
+	"github.com/onboard-inc/golang-tools/internal/aliases"
 )
 
 func TypeErrorEndPos(fset *token.FileSet, src []byte, start token.Pos) token.Pos {

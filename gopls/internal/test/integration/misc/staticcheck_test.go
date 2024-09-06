@@ -7,10 +7,10 @@ package misc
 import (
 	"testing"
 
-	"golang.org/x/tools/internal/aliases"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/onboard-inc/golang-tools/internal/aliases"
+	"github.com/onboard-inc/golang-tools/internal/testenv"
 
-	. "golang.org/x/tools/gopls/internal/test/integration"
+	. "github.com/onboard-inc/golang-tools/gopls/internal/test/integration"
 )
 
 func TestStaticcheckGenerics(t *testing.T) {

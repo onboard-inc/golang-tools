@@ -18,8 +18,8 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/internal/aliases"
-	"golang.org/x/tools/internal/gcimporter"
+	"github.com/onboard-inc/golang-tools/internal/aliases"
+	"github.com/onboard-inc/golang-tools/internal/gcimporter"
 )
 
 var isRace = false

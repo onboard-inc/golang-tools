@@ -15,8 +15,8 @@ import (
 
 	"golang.org/x/telemetry"
 	"golang.org/x/telemetry/counter"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/internal/event"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol"
+	"github.com/onboard-inc/golang-tools/internal/event"
 )
 
 // promptTimeout is the amount of time we wait for an ongoing prompt before

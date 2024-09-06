@@ -16,11 +16,11 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/go/buildutil"
-	"golang.org/x/tools/go/gcexportdata"
-	"golang.org/x/tools/go/loader"
-	"golang.org/x/tools/go/types/objectpath"
-	"golang.org/x/tools/internal/aliases"
+	"github.com/onboard-inc/golang-tools/go/buildutil"
+	"github.com/onboard-inc/golang-tools/go/gcexportdata"
+	"github.com/onboard-inc/golang-tools/go/loader"
+	"github.com/onboard-inc/golang-tools/go/types/objectpath"
+	"github.com/onboard-inc/golang-tools/internal/aliases"
 )
 
 func TestPaths(t *testing.T) {

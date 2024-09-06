@@ -16,7 +16,7 @@ import (
 	"os"
 	"strings"
 
-	"golang.org/x/tools/present"
+	"github.com/onboard-inc/golang-tools/present"
 )
 
 var (

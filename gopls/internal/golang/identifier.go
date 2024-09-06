@@ -9,8 +9,8 @@ import (
 	"go/ast"
 	"go/types"
 
-	"golang.org/x/tools/internal/aliases"
-	"golang.org/x/tools/internal/typesinternal"
+	"github.com/onboard-inc/golang-tools/internal/aliases"
+	"github.com/onboard-inc/golang-tools/internal/typesinternal"
 )
 
 // ErrNoIdentFound is error returned when no identifier is found at a particular position

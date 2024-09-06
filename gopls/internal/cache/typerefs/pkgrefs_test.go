@@ -18,15 +18,15 @@ import (
 	"testing"
 	"time"
 
-	"golang.org/x/tools/go/gcexportdata"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/gopls/internal/cache/metadata"
-	"golang.org/x/tools/gopls/internal/cache/parsego"
-	"golang.org/x/tools/gopls/internal/cache/typerefs"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/util/astutil"
-	"golang.org/x/tools/internal/packagesinternal"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/onboard-inc/golang-tools/go/gcexportdata"
+	"github.com/onboard-inc/golang-tools/go/packages"
+	"github.com/onboard-inc/golang-tools/gopls/internal/cache/metadata"
+	"github.com/onboard-inc/golang-tools/gopls/internal/cache/parsego"
+	"github.com/onboard-inc/golang-tools/gopls/internal/cache/typerefs"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/astutil"
+	"github.com/onboard-inc/golang-tools/internal/packagesinternal"
+	"github.com/onboard-inc/golang-tools/internal/testenv"
 )
 
 var (

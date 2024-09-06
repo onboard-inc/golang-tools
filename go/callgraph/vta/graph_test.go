@@ -12,10 +12,10 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/go/callgraph/cha"
-	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/go/ssa/ssautil"
-	"golang.org/x/tools/internal/aliases"
+	"github.com/onboard-inc/golang-tools/go/callgraph/cha"
+	"github.com/onboard-inc/golang-tools/go/ssa"
+	"github.com/onboard-inc/golang-tools/go/ssa/ssautil"
+	"github.com/onboard-inc/golang-tools/internal/aliases"
 )
 
 func TestNodeInterface(t *testing.T) {

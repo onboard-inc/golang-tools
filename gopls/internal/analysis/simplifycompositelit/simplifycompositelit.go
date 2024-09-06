@@ -16,11 +16,11 @@ import (
 	"go/token"
 	"reflect"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/passes/inspect"
-	"golang.org/x/tools/go/ast/inspector"
-	"golang.org/x/tools/gopls/internal/util/astutil"
-	"golang.org/x/tools/internal/analysisinternal"
+	"github.com/onboard-inc/golang-tools/go/analysis"
+	"github.com/onboard-inc/golang-tools/go/analysis/passes/inspect"
+	"github.com/onboard-inc/golang-tools/go/ast/inspector"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/astutil"
+	"github.com/onboard-inc/golang-tools/internal/analysisinternal"
 )
 
 //go:embed doc.go
@@ -31,7 +31,7 @@ var Analyzer = &analysis.Analyzer{
 	Doc:      analysisinternal.MustExtractDoc(doc, "simplifycompositelit"),
 	Requires: []*analysis.Analyzer{inspect.Analyzer},
 	Run:      run,
-	URL:      "https://pkg.go.dev/golang.org/x/tools/gopls/internal/analysis/simplifycompositelit",
+	URL:      "https://pkg.go.dev/github.com/onboard-inc/golang-tools/gopls/internal/analysis/simplifycompositelit",
 }
 
 func run(pass *analysis.Pass) (interface{}, error) {

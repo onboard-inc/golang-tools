@@ -42,17 +42,17 @@ import (
 	"path/filepath"
 	"strings"
 
-	"golang.org/x/tools/go/ast/astutil"
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/cache/parsego"
-	"golang.org/x/tools/gopls/internal/protocol"
-	goplsastutil "golang.org/x/tools/gopls/internal/util/astutil"
-	"golang.org/x/tools/gopls/internal/util/bug"
-	"golang.org/x/tools/gopls/internal/util/safetoken"
-	"golang.org/x/tools/gopls/internal/util/slices"
-	"golang.org/x/tools/gopls/internal/util/typesutil"
-	"golang.org/x/tools/internal/stdlib"
-	"golang.org/x/tools/internal/typesinternal"
+	"github.com/onboard-inc/golang-tools/go/ast/astutil"
+	"github.com/onboard-inc/golang-tools/gopls/internal/cache"
+	"github.com/onboard-inc/golang-tools/gopls/internal/cache/parsego"
+	"github.com/onboard-inc/golang-tools/gopls/internal/protocol"
+	goplsastutil "github.com/onboard-inc/golang-tools/gopls/internal/util/astutil"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/bug"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/safetoken"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/slices"
+	"github.com/onboard-inc/golang-tools/gopls/internal/util/typesutil"
+	"github.com/onboard-inc/golang-tools/internal/stdlib"
+	"github.com/onboard-inc/golang-tools/internal/typesinternal"
 )
 
 // DocFragment finds the package and (optionally) symbol identified by

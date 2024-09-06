@@ -9,7 +9,7 @@ import (
 	"sort"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/fuzzy"
+	"github.com/onboard-inc/golang-tools/gopls/internal/fuzzy"
 )
 
 var rolesTests = []struct {

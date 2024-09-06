@@ -20,11 +20,11 @@ import (
 	"testing"
 
 	"github.com/jba/templatecheck"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/debug"
-	"golang.org/x/tools/gopls/internal/file"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/onboard-inc/golang-tools/go/packages"
+	"github.com/onboard-inc/golang-tools/gopls/internal/cache"
+	"github.com/onboard-inc/golang-tools/gopls/internal/debug"
+	"github.com/onboard-inc/golang-tools/gopls/internal/file"
+	"github.com/onboard-inc/golang-tools/internal/testenv"
 )
 
 var templates = map[string]struct {
@@ -62,7 +62,7 @@ func TestTemplates(t *testing.T) {
 		"GOFLAGS=-mod=mod",
 	)
 
-	pkgs, err := packages.Load(cfg, "golang.org/x/tools/gopls/internal/debug")
+	pkgs, err := packages.Load(cfg, "github.com/onboard-inc/golang-tools/gopls/internal/debug")
 	if err != nil {
 		t.Fatal(err)
 	}

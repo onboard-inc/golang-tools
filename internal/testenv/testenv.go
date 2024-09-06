@@ -21,7 +21,7 @@ import (
 	"time"
 
 	"golang.org/x/mod/modfile"
-	"golang.org/x/tools/internal/goroot"
+	"github.com/onboard-inc/golang-tools/internal/goroot"
 )
 
 // packageMainIsDevel reports whether the module containing package main
@@ -424,14 +424,14 @@ func GOROOT(t testing.TB) string {
 	return path
 }
 
-// NeedsLocalXTools skips t if the golang.org/x/tools module is replaced and
+// NeedsLocalXTools skips t if the github.com/onboard-inc/golang-tools module is replaced and
 // its replacement directory does not exist (or does not contain the module).
 func NeedsLocalXTools(t testing.TB) {
 	t.Helper()
 
 	NeedsTool(t, "go")
 
-	cmd := Command(t, "go", "list", "-f", "{{with .Replace}}{{.Dir}}{{end}}", "-m", "golang.org/x/tools")
+	cmd := Command(t, "go", "list", "-f", "{{with .Replace}}{{.Dir}}{{end}}", "-m", "github.com/onboard-inc/golang-tools")
 	out, err := cmd.Output()
 	if err != nil {
 		if ee, ok := err.(*exec.ExitError); ok && len(ee.Stderr) > 0 {
@@ -457,7 +457,7 @@ func NeedsLocalXTools(t testing.TB) {
 	}
 	modulePath := modfile.ModulePath(b)
 
-	if want := "golang.org/x/tools"; modulePath != want {
+	if want := "github.com/onboard-inc/golang-tools"; modulePath != want {
 		t.Skipf("skipping test: %s module path is %q, not %q", modFilePath, modulePath, want)
 	}
 }

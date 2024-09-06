@@ -8,7 +8,7 @@ import (
 	"encoding/json"
 	"path/filepath"
 
-	"golang.org/x/tools/internal/gocommand"
+	"github.com/onboard-inc/golang-tools/internal/gocommand"
 )
 
 // determineRootDirs returns a mapping from absolute directories that could

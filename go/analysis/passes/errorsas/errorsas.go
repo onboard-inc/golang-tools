@@ -11,11 +11,11 @@ import (
 	"go/ast"
 	"go/types"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/passes/inspect"
-	"golang.org/x/tools/go/analysis/passes/internal/analysisutil"
-	"golang.org/x/tools/go/ast/inspector"
-	"golang.org/x/tools/go/types/typeutil"
+	"github.com/onboard-inc/golang-tools/go/analysis"
+	"github.com/onboard-inc/golang-tools/go/analysis/passes/inspect"
+	"github.com/onboard-inc/golang-tools/go/analysis/passes/internal/analysisutil"
+	"github.com/onboard-inc/golang-tools/go/ast/inspector"
+	"github.com/onboard-inc/golang-tools/go/types/typeutil"
 )
 
 const Doc = `report passing non-pointer or non-error values to errors.As
@@ -26,7 +26,7 @@ of the second argument is not a pointer to a type implementing error.`
 var Analyzer = &analysis.Analyzer{
 	Name:     "errorsas",
 	Doc:      Doc,
-	URL:      "https://pkg.go.dev/golang.org/x/tools/go/analysis/passes/errorsas",
+	URL:      "https://pkg.go.dev/github.com/onboard-inc/golang-tools/go/analysis/passes/errorsas",
 	Requires: []*analysis.Analyzer{inspect.Analyzer},
 	Run:      run,
 }

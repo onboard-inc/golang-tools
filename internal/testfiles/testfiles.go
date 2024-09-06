@@ -14,7 +14,7 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/txtar"
+	"github.com/onboard-inc/golang-tools/txtar"
 )
 
 // CopyToTmp copies the files and directories in src to a new temporary testing

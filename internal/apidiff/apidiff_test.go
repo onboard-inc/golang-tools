@@ -15,8 +15,8 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/onboard-inc/golang-tools/go/packages"
+	"github.com/onboard-inc/golang-tools/internal/testenv"
 )
 
 func TestChanges(t *testing.T) {
@@ -140,7 +140,7 @@ func load(t *testing.T, importPath, goPath string) (*packages.Package, error) {
 }
 
 func TestExportedFields(t *testing.T) {
-	pkg, err := load(t, "golang.org/x/tools/internal/apidiff/testdata/exported_fields", "")
+	pkg, err := load(t, "github.com/onboard-inc/golang-tools/internal/apidiff/testdata/exported_fields", "")
 	if err != nil {
 		t.Fatal(err)
 	}

@@ -26,7 +26,7 @@ import (
 	"strconv"
 	"strings"
 
-	"golang.org/x/tools/internal/edit"
+	"github.com/onboard-inc/golang-tools/internal/edit"
 )
 
 func main() {

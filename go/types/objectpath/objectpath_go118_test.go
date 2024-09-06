@@ -8,9 +8,9 @@ import (
 	"go/types"
 	"testing"
 
-	"golang.org/x/tools/go/buildutil"
-	"golang.org/x/tools/go/loader"
-	"golang.org/x/tools/go/types/objectpath"
+	"github.com/onboard-inc/golang-tools/go/buildutil"
+	"github.com/onboard-inc/golang-tools/go/loader"
+	"github.com/onboard-inc/golang-tools/go/types/objectpath"
 )
 
 // TODO(adonovan): merge this back into objectpath_test.go.

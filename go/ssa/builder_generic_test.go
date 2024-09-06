@@ -13,9 +13,9 @@ import (
 	"sort"
 	"testing"
 
-	"golang.org/x/tools/go/expect"
-	"golang.org/x/tools/go/loader"
-	"golang.org/x/tools/go/ssa"
+	"github.com/onboard-inc/golang-tools/go/expect"
+	"github.com/onboard-inc/golang-tools/go/loader"
+	"github.com/onboard-inc/golang-tools/go/ssa"
 )
 
 // TestGenericBodies tests that bodies of generic functions and methods containing
