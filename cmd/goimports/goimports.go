@@ -26,10 +26,11 @@ import (
 
 var (
 	// main operation modes
-	list   = flag.Bool("l", false, "list files whose formatting differs from goimport's")
-	write  = flag.Bool("w", false, "write result to (source) file instead of stdout")
-	doDiff = flag.Bool("d", false, "display diffs instead of rewriting files")
-	srcdir = flag.String("srcdir", "", "choose imports as if source code is from `dir`. When operating on a single file, dir may instead be the complete file name.")
+	list        = flag.Bool("l", false, "list files whose formatting differs from goimport's")
+	write       = flag.Bool("w", false, "write result to (source) file instead of stdout")
+	doDiff      = flag.Bool("d", false, "display diffs instead of rewriting files")
+	srcdir      = flag.String("srcdir", "", "choose imports as if source code is from `dir`. When operating on a single file, dir may instead be the complete file name.")
+	failUnclean = flag.Bool("f", false, "exit with non-zero code if any of the files needed changes")
 
 	verbose bool // verbose logging
 
@@ -175,6 +176,9 @@ func processFile(filename string, in io.Reader, out io.Writer, argType argumentT
 			}
 			fmt.Printf("diff -u %s %s\n", filepath.ToSlash(filename+".orig"), filepath.ToSlash(filename))
 			out.Write(data)
+		}
+		if *failUnclean {
+			err = fmt.Errorf("%s needed reformatting", filename)
 		}
 	}
 
